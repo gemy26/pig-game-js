@@ -52,10 +52,11 @@ playertwoactive.classList.toggle('player--active');
  score_after_hold=document.getElementById(`score--${activeplayer}`);
  score_after_hold.textContent=scores[`${activeplayer}`];
   document.getElementById(`current--${activeplayer}`).textContent=0;
+     playeroneactive.classList.toggle('player--active');
+playertwoactive.classList.toggle('player--active');
   currentscore=0;
 activeplayer=activeplayer===0?1:0;
-playeroneactive.classList.toggle('player--active');
-playertwoactive.classList.toggle('player--active');
+
     })
 
   let reset=document.querySelector('.btn--new');
