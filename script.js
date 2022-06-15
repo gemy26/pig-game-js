@@ -54,7 +54,8 @@ playertwoactive.classList.toggle('player--active');
   document.getElementById(`current--${activeplayer}`).textContent=0;
   currentscore=0;
 activeplayer=activeplayer===0?1:0;
-
+playeroneactive.classList.toggle('player--active');
+playertwoactive.classList.toggle('player--active');
     })
 
   let reset=document.querySelector('.btn--new');
